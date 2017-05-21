@@ -221,6 +221,7 @@ api.identify()
 ```
 
 ### Temporarily set effect (will revert when finished) ###
+
 ```javascript
 api.setTempEffect('Nemo', 10)
     .then(function() {
@@ -230,3 +231,4 @@ api.setTempEffect('Nemo', 10)
     console.error(err);
 });
 ```
+Scene/Effect, Time in seconds before reverting to previous state
