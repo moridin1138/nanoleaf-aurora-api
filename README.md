@@ -1,16 +1,6 @@
 # JavaScript Nanoleaf Aurora API for node.js #
 
-A node.js module, which provides a wrapper for the Nanoleaf Aurora API.
-
-[![CircleCI](https://circleci.com/gh/darrent/nanoleaf-aurora-api/tree/master.svg?style=svg)](https://circleci.com/gh/darrent/nanoleaf-aurora-api/tree/master)
-
-## Installation ##
-
-Install with the node package manager [npm](https://www.npmjs.com/package/nanoleaf-aurora-client):
-
-```shell
-$ npm install nanoleaf-aurora-client
-```
+A node.js module, forked from @darrent, which provides a wrapper for the Nanoleaf Aurora API.  Modified to include the temporary setting of an effect.
 
 ## Examples ##
 
@@ -228,4 +218,15 @@ api.identify()
   .catch(function(err) {
     console.error(err);
   });
+```
+
+### Temporarily set effect (will revert when finished) ###
+```javascript
+api.setTempEffect('Garage Open', 10)
+    .then(function() {
+    console.log('Success!');
+})
+.catch(function(err) {
+    console.error(err);
+});
 ```
