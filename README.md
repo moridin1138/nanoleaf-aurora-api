@@ -222,7 +222,7 @@ api.identify()
 
 ### Temporarily set effect (will revert when finished) ###
 ```javascript
-api.setTempEffect('Garage Open', 10)
+api.setTempEffect('Nemo', 10)
     .then(function() {
     console.log('Success!');
 })
